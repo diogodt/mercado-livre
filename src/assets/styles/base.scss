@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+body, html {
+    font-family: sans-serif;
+    font-weight: $fontRegularWeight;
+    margin: 0;
+    background: $lightGray;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+    grid-column: span $i;
+    }
+}
+
+[col] {
+    box-sizing: border-box;
+    padding: 0 10px; // Half of the 20px gap, applied to both sides
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $MarginSmall; 
+    width: 100%; 
+    margin: 0 auto; 
+
+    .row {
+        margin: 10px 0;
+    }
+
+  }
+
+  .pageWrapper {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainContent {
+    display: flex;
+    grid-row-gap: 12px;
+    padding: $MarginSmall;
+    width: 100%;
+    max-width: calc(1200px - 32px);
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .breadcrumbsWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    font-size: $font14;
+    color: $gray;
+  }
+
+  input::placeholder {
+    color: $gray;
+    }
+
+  @each $break, $size in $breakpoints {
+    @media (min-width: $size) {
+      @for $i from 1 through 12 {
+        .col-#{$break}-#{$i} {
+          grid-column: span $i;
+        }
+      }
+    }
+  }

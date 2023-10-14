@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+.productItem {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: $MarginSmall 0;
+    border-bottom: solid 1px $lightGray;
+
+    a { 
+        display: flex;
+        width: 95%; 
+        text-decoration: none;
+        color: $black;
+    }
+
+    .image img {
+        width: 180px;
+        height: 180px;
+        flex-shrink: 0;
+    }
+
+    .textInformation {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-left: $MarginSmall;
+        padding-top: $MarginBig;
+
+        .priceStateContainer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .price {
+                align-self: flex-start;
+                font-size: $font24
+            }
+
+            .stateName {
+                align-self: flex-end;
+                font-size: $font12;
+                color: $darkGray;
+            }
+        }
+
+        .title {
+            width: 100%;
+            font-size: $font18
+        }
+    }
+}
+
+.productItem:first-child {
+    padding-top: 0
+}
+
+.productItem:last-child {
+    padding-bottom: 0
+}
+
+.price img {
+    margin-left: 10px;
+}

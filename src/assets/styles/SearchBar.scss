@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+.searchBar {
+    background: $yellowBackground;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    height: 65px;
+}
+
+.searchWrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 12px;
+    padding: 8px 10px 12px 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.searchInput {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: $white;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border-radius: 2px 0 0 2px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0);
+    border-width: 1.5px;
+    width: calc(100% - 75px);
+}
+
+.searchInput:focus, .searchInput:focus-visible {
+    border: 1.5px solid $blue!important;
+    outline: none;
+}
+
+.logo img {
+    width: auto;
+    margin-top: 3px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.searchIcon {
+    width: 43px;
+    position: relative;
+    top: 2px;
+    height: 43px;
+    border: none;
+    background-color: $lightGray;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px 0 0 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 1.5px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.searchForm {
+    align-items: start;
+}
+
+.searchForm .searchInput, .searchForm .searchIcon {
+    align-self: start;
+}

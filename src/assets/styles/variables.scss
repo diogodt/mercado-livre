@@ -1,0 +1,36 @@
+// COLORS
+$yellowBackground: #FFE600;
+$text: #333333;
+$darkGray: #666666;
+$gray: #999999;
+$lightGray: #EEEEEE;
+$blue: #3483FA;
+$darkBlue: #2968c8;
+$white: #FFFFFF;
+$black: #000000;
+
+// MARGINS
+$MarginSmall: 16px;
+$MarginBig: 32px;
+
+// FONT-SIZE
+$font12: 12px;
+$font14: 14px;
+$font16: 16px;
+$font18: 18px;
+$font24: 24px;
+$font28: 28px;
+$font46: 46px;
+
+$fontRegularFamily: 'sans-serif';
+$fontRegularWeight: 100;
+$fontBold: 400;
+
+// RESPONSIVENESS
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
