@@ -1,4 +1,4 @@
-==================================== VERSIÓN EN ESPAÑOL ====================================
+=================================== VERSIÓN EN ESPAÑOL ===================================
 
 ### Explorador de Productos de MercadoLibre
 Una aplicación web basada en React que facilita la búsqueda y visualización de productos en MercadoLibre.
@@ -96,7 +96,7 @@ Props: imageUrl, posición de zoom, posición de actionBuyItem.
 Dependencias: Estilos SCSS de ZoomProductImage.scss.
 Implementación: El zoom se logra mediante propiedades CSS de transformación.
 
-==================================== ENGLISH VERSION ====================================
+=================================== ENGLISH VERSION ===================================
 
 ### MercadoLibre Product Explorer
 A React-based web application that facilitates product searching and viewing on MercadoLibre.
