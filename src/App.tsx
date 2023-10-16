@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import store from './redux/store/store';
 
 // Components
-import SearchBar from './components/SearchBar';
+import SearchBar from './components/SearchBar/SearchBar';
 
 // Pages
 import LandingPage from './pages/LandingPage';
-import SearchResultsPage from './pages/SearchResultsPage';
-import SelectedProductPage from './pages/SelectedProductPage';
+import SearchResultsPage from './pages/SearchResultsPage/SearchResultsPage';
+import SelectedProductPage from './pages/SelectedProductPage/SelectedProductPage';
 
 const App: React.FC = () => {
     return (

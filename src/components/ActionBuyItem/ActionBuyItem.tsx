@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/ActionBuyItem.scss';
+import './ActionBuyItem.scss';
 
 interface Props {
   condition: string;

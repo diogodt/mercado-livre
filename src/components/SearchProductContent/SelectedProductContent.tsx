@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setActiveImage } from "../redux/reducers/productReducer";
-import { RootState } from "../redux/store/store";
-import ZoomProductImage from "./ZoomProductImage";
+import { setActiveImage } from "../../redux/reducers/productReducer";
+import { RootState } from "../../redux/store/store";
+import ZoomProductImage from "../ZoomProductImage/ZoomProductImage";
 
-import "../assets/styles/SelectedProductContent.scss";
+import "./SelectedProductContent.scss";
 
 interface Props {
   image: string;

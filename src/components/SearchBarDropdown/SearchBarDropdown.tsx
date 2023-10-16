@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../redux/store/store';
+import { RootState } from '../../redux/store/store';
 
-import searchIcon from '../assets/images/ic_Search@2x.png.png';
-import '../assets/styles/DropDown.scss'; 
+import searchIcon from '../../assets/images/ic_Search@2x.png.png';
+import './SearchBarDropDown.scss'; 
 
 export type Product = {
     id: string;

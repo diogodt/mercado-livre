@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { autocompleteSearch } from '../redux/thunks/searchThunks';
-import SearchBarDropdown from './SearchBarDropdown';
-import { Product } from './SearchBarDropdown'
+import { autocompleteSearch } from '../../redux/thunks/searchThunks';
+import SearchBarDropdown from '../SearchBarDropdown/SearchBarDropdown';
+import { Product } from '../SearchBarDropdown/SearchBarDropdown'
 import { ThunkDispatch } from 'redux-thunk';
 import { RootState } from 'redux/store/store';
 import { AnyAction } from 'redux';
 
-import logo from '../assets/images/Logo_ML.png';
-import searchIcon from '../assets/images/ic_Search.png';
+import logo from '../../assets/images/Logo_ML.png';
+import searchIcon from '../../assets/images/ic_Search.png';
 
 
-import '../assets/styles/SearchBar.scss'; 
+import './SearchBar.scss'; 
 
 const SearchBar: React.FC = () => {
     const [query, setQuery] = useState('');

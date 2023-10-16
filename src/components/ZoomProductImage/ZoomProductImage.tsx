@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import '../assets/styles/ZoomProductImage.scss';
+import './ZoomProductImage.scss';
 
 interface Props {
   imageUrl: string;

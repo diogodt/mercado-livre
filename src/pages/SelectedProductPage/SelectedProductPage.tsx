@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { fetchProductDetails } from '../redux/thunks/productThunks'; 
-import { RootState } from '../redux/store/store';
+import { fetchProductDetails } from '../../redux/thunks/productThunks'; 
+import { RootState } from '../../redux/store/store';
 import { ThunkDispatch } from 'redux-thunk';
 import { AnyAction } from 'redux';
 
-import SelectedProductContent from '../components/SelectedProductContent';
-import ActionBuyItem from '../components/ActionBuyItem';
-import Breadcrumbs from '../components/Breadcrumbs';
+import SelectedProductContent from '../../components/SearchProductContent/SelectedProductContent';
+import ActionBuyItem from '../../components/ActionBuyItem/ActionBuyItem';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 
-import '../assets/styles/SelectedProductPage.scss';
+import './SelectedProductPage.scss';
 
 const SelectedProductPage: React.FC = () => {
     const dispatch: ThunkDispatch<RootState, unknown, AnyAction> = useDispatch();

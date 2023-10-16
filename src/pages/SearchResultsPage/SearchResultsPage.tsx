@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { fullSearchAction } from '../redux/thunks/searchThunks';
-import { Product } from '../components/SearchBarDropdown'
-import { RootState } from '../redux/store/store';
+import { fullSearchAction } from '../../redux/thunks/searchThunks';
+import { Product } from '../../components/SearchBarDropdown/SearchBarDropdown'
+import { RootState } from '../../redux/store/store';
 import { AnyAction } from 'redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { Link } from 'react-router-dom';
-import Breadcrumbs from '../components/Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 
-import freeShipping from '../assets/images/ic_shipping.png';
+import freeShipping from '../../assets/images/ic_shipping.png';
 
-import '../assets/styles/SearchResultsPage.scss'; 
+import './SearchResultsPage.scss'; 
 
 const SearchResultsPage: React.FC = () => {
     const dispatch: ThunkDispatch<RootState, unknown, AnyAction> = useDispatch();
